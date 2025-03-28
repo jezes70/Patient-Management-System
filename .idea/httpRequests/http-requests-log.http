@@ -1,0 +1,189 @@
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T033737.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T031337.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T025604.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T024325.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 152
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "John Doe ",
+  "email": "test@example.com",
+  "address": "123 main street ",
+  "dateOfBirth": "1995-09-09",
+  "registerDate": "2024-11-28"
+}
+
+<> 2025-03-28T022654.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo street ",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T021420.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo street ",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T020203.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo street ",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T020019.500.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 178
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo ",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+<> 2025-03-28T014305.500.json
+
+###
+
+GET http://localhost:4000/patients
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2025-03-27T235250.200.json
+
+###
+
+GET http://localhost:4000/patients
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2025-03-27T234006.500.json
+
+###
+

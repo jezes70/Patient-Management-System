@@ -1,0 +1,13 @@
+### Creats a new patient entoty
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Morris Gray",
+  "email": "morrisgray@gmail.com",
+  "address": "22 Good news Estate Threax Songotdo",
+  "dateOfBirth": "2000-07-07",
+  "registerDate": "2025-03-28"
+}
+
+###
