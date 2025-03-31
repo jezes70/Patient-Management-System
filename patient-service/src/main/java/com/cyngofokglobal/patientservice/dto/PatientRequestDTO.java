@@ -1,5 +1,6 @@
 package com.cyngofokglobal.patientservice.dto;
 
+import com.cyngofokglobal.patientservice.dto.validators.CreatePatientValidationGroup;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -17,8 +18,8 @@ public class PatientRequestDTO {
     private String address;
     @NotBlank(message = "Date of birth is required")
     private String dateOfBirth;
-    @NotBlank(message = "Registered date is required")
-    private String registerDate;
+    @NotBlank(groups = CreatePatientValidationGroup.class, message = "Registered date is required")
+    private String registeredDate;
 
     public @NotBlank(message = "Name is required") @Size(max = 50, message = "Name cannot exceed 50 characters") String getName() {
         return name;
@@ -55,11 +56,11 @@ public class PatientRequestDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getRegisterDate() {
-        return registerDate;
+    public String getRegisteredDate() {
+        return registeredDate;
     }
 
-    public void setRegisterDate(String registerDate) {
-        this.registerDate = registerDate;
+    public void setRegisteredDate(String registeredDate) {
+        this.registeredDate = registeredDate;
     }
 }

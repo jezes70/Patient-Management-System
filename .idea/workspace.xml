@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="605d4733-cc24-47bb-a524-85cb5d5e9ca4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/api-requests/patient-service/create-patient.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/api-requests/patient-service/delete-patient.http" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/api-requests/patient-service/get-patients.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/api-requests/patient-service/update-patient.http" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/mvnw.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
@@ -25,6 +19,10 @@
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/controller/PatientController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/dto/PatientRequestDTO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/dto/PatientResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/dto/validators/CreatePatientValidationGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/exception/EmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/exception/PatientNotFoundException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/mapper/PatientMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/model/Patient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/cyngofokglobal/patientservice/repository/PatientRepository.java" afterDir="false" />
@@ -32,6 +30,20 @@
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/main/resources/data.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/patient-service/src/test/java/com/cyngofokglobal/patientservice/PatientServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-27T234006.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-27T235250.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T014305.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T020019.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T020203.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T021420.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T022654.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T024325.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T025604.500.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T031337.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2025-03-28T033737.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="HTTP Request" />
       </list>
     </option>
@@ -57,42 +69,53 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2usAj9WbyQYdEvmbFXtAlgRHhuE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "21",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
     <configuration name="create-patient | Creats a new patient entoty" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/create-patient.http" requestIdentifier="Creats a new patient entoty" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="get-patients | GET request to get all patients" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/get-patients.http" requestIdentifier="GET request to get all patients" runType="Run single request">
+    <configuration name="delete-patient | Delete an entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/delete-patient.http" requestIdentifier="Delete an entity" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | Update patient request entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/update-patient.http" requestIdentifier="Update patient request entity" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | Update patient request" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/update-patient.http" requestIdentifier="Update patient request" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="update-patient | Updates an existing patient entity" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/patient-service/api-requests/patient-service/update-patient.http" requestIdentifier="Updates an existing patient entity" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -105,8 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.delete-patient | Delete an entity" />
         <item itemvalue="HTTP Request.create-patient | Creats a new patient entoty" />
-        <item itemvalue="HTTP Request.get-patients | GET request to get all patients" />
+        <item itemvalue="HTTP Request.update-patient | Updates an existing patient entity" />
+        <item itemvalue="HTTP Request.update-patient | Update patient request entity" />
+        <item itemvalue="HTTP Request.update-patient | Update patient request" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +145,10 @@
       <option name="presentableId" value="Default" />
       <updated>1743027044356</updated>
       <workItem from="1743027046533" duration="10930000" />
-      <workItem from="1743099103218" duration="20429000" />
+      <workItem from="1743099103218" duration="35207000" />
+      <workItem from="1743287615963" duration="3829000" />
+      <workItem from="1672575857705" duration="166000" />
+      <workItem from="1680261754996" duration="10394000" />
     </task>
     <servers />
   </component>

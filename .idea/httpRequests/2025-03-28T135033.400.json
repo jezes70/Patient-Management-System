@@ -1,0 +1,5 @@
+{
+  "name": "Name is required",
+  "email": "Email is required",
+  "registerDate": "Registered date is required"
+}

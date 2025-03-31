@@ -12,10 +12,10 @@ CREATE TABLE IF NOT EXISTS patient
 -- Insert well-known UUIDs for specific patients
 INSERT INTO patient (id, name, email, address, date_of_birth, registered_date)
 SELECT '123e4567-e89b-12d3-a456-426614174000',
-       'John Doe',
-       'john.doe@example.com',
-       '123 Main St, Springfield',
-       '1985-06-15',
+       'Morrison Gray',
+       'morrisongray19@gmail.com',
+       '223 Good news Estate Threax Songotdo',
+       '2002-07-07',
        '2024-01-10'
     WHERE NOT EXISTS (SELECT 1
                   FROM patient
