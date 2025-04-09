@@ -1,0 +1,14 @@
+### Creats a new patient entoty
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Ifeanyi Okpara",
+  "email": "okparaifeanyi@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-06-15",
+  "registeredDate": "2014-07-11"
+
+}
+
+###

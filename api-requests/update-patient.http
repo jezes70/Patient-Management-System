@@ -1,0 +1,12 @@
+### Updates an existing patient entity
+PUT http://localhost:4000/patients/cc585cdf-bc2b-4137-8efc-b180567aa781
+Content-Type: application/json
+
+{
+  "name": "Mayorr Governor",
+  "email": "overnor478@gmail.com",
+  "address": "12 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-04-02"
+
+}
+###
