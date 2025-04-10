@@ -1,3 +1,41 @@
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 194
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ifeanyi Okpara Morris",
+  "email": "okparaifeanyimorris@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-06-15",
+  "registeredDate": "2014-07-11"
+
+}
+
+<> 2025-04-10T025543.200.json
+
+###
+
+GRPC localhost:9001/BillingService/CreateBillingAccountGRPC localhost:9001/BillingService/CreateBillingAccountGET http://localhost:4000/patients
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2025-04-09T124708.200.json
+
+###
+
+GET http://localhost:4000/patients
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2025-04-09T124654.200.json
+
+###
+
 GET http://localhost:4000/patients
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
