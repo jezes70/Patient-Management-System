@@ -3,11 +3,11 @@ POST http://localhost:4000/patients
 Content-Type: application/json
 
 {
-  "name": "Ifeanyi Okpara Morris",
-  "email": "okparaifeanyimorris@gmail.com",
+  "name": "Abutex Limiteds",
+  "email": "abutexlimited17@gmail.com",
   "address": "125 Bishop Johnson stress Town",
-  "dateOfBirth": "1984-06-15",
-  "registeredDate": "2014-07-11"
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
 
 }
 

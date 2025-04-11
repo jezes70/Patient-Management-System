@@ -1,5 +1,165 @@
 POST http://localhost:4000/patients
 Content-Type: application/json
+Content-Length: 184
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Abutex Limiteds",
+  "email": "abutexlimited17@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T012604.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 183
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Abutex Limiteds",
+  "email": "abutexlimited1@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T011546.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 181
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Abutex Limited",
+  "email": "abutexlimited@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T011000.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 178
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ekene Chiqui",
+  "email": "chquiekene12@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T003802.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 179
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ekene Chiqui",
+  "email": "chquiekene123@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T003211.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ekene Chiqui",
+  "email": "chquiekene1@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-05-15",
+  "registeredDate": "2013-07-11"
+
+}
+
+<> 2025-04-11T003026.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 198
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ifeanyi Okpara Morriss",
+  "email": "okparaifeanyimorris221@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-06-15",
+  "registeredDate": "2014-07-11"
+
+}
+
+<> 2025-04-11T002731.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 196
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Ifeanyi Okpara Morris",
+  "email": "okparaifeanyimorris22@gmail.com",
+  "address": "125 Bishop Johnson stress Town",
+  "dateOfBirth": "1984-06-15",
+  "registeredDate": "2014-07-11"
+
+}
+
+<> 2025-04-11T002235.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
 Content-Length: 194
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)

@@ -5,6 +5,7 @@ import com.cyngofokglobal.patientservice.dto.PatientResponseDTO;
 import com.cyngofokglobal.patientservice.exception.EmailAlreadyExistsException;
 import com.cyngofokglobal.patientservice.exception.PatientNotFoundException;
 import com.cyngofokglobal.patientservice.grpc.BillingServiceGrpcClient;
+import com.cyngofokglobal.patientservice.kafka.KafkaProducer;
 import com.cyngofokglobal.patientservice.mapper.PatientMapper;
 import com.cyngofokglobal.patientservice.model.Patient;
 import com.cyngofokglobal.patientservice.repository.PatientRepository;
@@ -23,12 +24,13 @@ public class PatientService {
 
     private PatientRepository patientRepository;
     private BillingServiceGrpcClient billingServiceGrpcClient;
+    private final KafkaProducer kafkaProducer;
 
-    public PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient) {
+    public PatientService(PatientRepository patientRepository, BillingServiceGrpcClient billingServiceGrpcClient, KafkaProducer kafkaProducer) {
         this.patientRepository = patientRepository;
         this.billingServiceGrpcClient = billingServiceGrpcClient;
+        this.kafkaProducer = kafkaProducer;
     }
-
     public List<PatientResponseDTO> getPatients() {
         List<Patient> patients = patientRepository.findAll();
 
@@ -46,9 +48,10 @@ public class PatientService {
         billingServiceGrpcClient.createBillingAccount(newPatient.getId().toString(),
                 newPatient.getName(), newPatient.getEmail());
 
+        kafkaProducer.sendEvent(newPatient);
+
         return PatientMapper.toDTO(newPatient);
     }
-
     public PatientResponseDTO updatePatient(
             UUID id, PatientRequestDTO patientRequestDTO) {
         Patient patient = patientRepository.findById(id).orElseThrow(
@@ -58,7 +61,6 @@ public class PatientService {
             throw new EmailAlreadyExistsException("A patient with this email " + "already exists"
                     + patientRequestDTO.getEmail());
         }
-
         patient.setName(patientRequestDTO.getName());
         patient.setEmail(patientRequestDTO.getEmail());
         patient.setAddress(patientRequestDTO.getAddress());
